@@ -23,3 +23,7 @@ database.once('connected', () => {
 const routes = require('./routes/routes');
 
 app.use('/api', routes)
+
+app.listen(3000, function () {
+    console.log('App listening on port 3000');
+});
